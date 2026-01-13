@@ -84,6 +84,7 @@ A microservice developed in Django REST Framework for the automatic generation o
    }
    ```
 
-📝 License
+## 📝 License
 This project is for technical evaluation purposes.
+This project is [MIT](./LICENCE.md) licensed.
 
