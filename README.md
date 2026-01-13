@@ -38,7 +38,7 @@ Microservicio desarrollado en **Django REST Framework** para la generación auto
 
 4. **Environment variables:** Create a ```.env``` file in the root directory:
     ```bash
-    GROQ_API_KEY=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
+    GROQ_API_KEY=<groq-api-key>
     ```
 
 5. **Run Migrations & Create Superuser:**
