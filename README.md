@@ -1,28 +1,27 @@
 # Whistleblower AI Report System 🛡️
 
-Microservicio desarrollado en **Django REST Framework** para la generación automática de reportes de denuncias anónimas utilizando inteligencia artificial generativa.
+A microservice developed in Django REST Framework for the automatic generation of anonymous complaint reports using generative artificial intelligence.
 
-## 🚀 Características
-* **Integración con IA:** Utiliza el modelo `llama-3.3-70b-versatile` de **Groq** para procesamiento ultra-rápido de lenguaje natural.
-* **Seguridad:** Implementación de autenticación vía **Token** para proteger los endpoints.
-* **Arquitectura Limpia:** Separación de responsabilidades mediante una capa de servicios (`services.py`) y validación de datos.
-* **Resiliencia:** Manejo de errores de cuota (HTTP 429) y fallos del proveedor de IA.
+## 🚀 Features
+* **AI Integration:** Utilizes the `llama-3.3-70b-versatile` model from Groq for ultra-fast natural language processing.
+* **Security:** Implementation of **Token** authentication to protect endpoints.
+* **Clean Architecture:** Separation of concerns using a service layer (`services.py`) and data validation.
+* **Resilience:** Handling of quota errors (HTTP 429) and AI provider failures.
 
 ---
 
-## 🛠️ Requisitos Previos
+## 🛠️ Prerequisites
 * Python 3.10+
 * Virtualenv
-* API Key de **Groq Cloud**
+* **Groq Cloud** API Key
 
 ---
 
-## 📥 Instalación
-
-1. **Clonar el repositorio:**
-   ```bash
-   git clone 
-   cd whistleblower-ai
+## 📥 Installation
+1. **Clone the repository:**
+   ```Bash
+   git clone https://github.com/er-contreras/whistleblower
+   cd whistleblower
    ```
 
 2. **Set up a virtual environment:**
@@ -55,35 +54,36 @@ Microservicio desarrollado en **Django REST Framework** para la generación auto
 ## 🚦 API Usage
 1. **Authentication**
 
-Endpoint: ```POST /api-token-auth/```
+   Endpoint: ```POST /api-token-auth/```
 
-Payload:
+   Payload:
 
-JSON
+   JSON
 
-```json
-{
-    "username": "your_admin",
-    "password": "your_password"
-}
-```
+   ```json
+   {
+       "username": "your_admin",
+       "password": "your_password"
+   }
+   ```
 
-## 2. Generate Report (Protected)
+2. **Generate Report (Protected)**
 
-Endpoint: ```POST /api/report/```
-
-Header: Authorization: Bearer <your_access_token>
-
-Payload:
-
-JSON
-
-```json
-{
-    "victim_name": "Carlos López",
-    "classification": "fraud"
-}
-```
+   Endpoint: ```POST /api/report/```
+   
+   Header: Authorization: Bearer <your_access_token>
+   
+   Payload:
+   
+   JSON
+   
+   ```json
+   {
+       "victim_name": "Carlos López",
+       "classification": "fraud"
+   }
+   ```
 
 📝 License
 This project is for technical evaluation purposes.
+
