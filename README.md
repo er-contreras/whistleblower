@@ -13,7 +13,7 @@ A microservice developed in Django REST Framework for the automatic generation o
 ## 🛠️ Prerequisites
 * Python 3.10+
 * Virtualenv
-* **Groq Cloud** API Key
+* **Groq Cloud** API Key https://console.groq.com/keys
 
 ---
 
